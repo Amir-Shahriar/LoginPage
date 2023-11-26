@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@drawable/suwall">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:padding="40dp"
+        android:background="@drawable/layout_su">
+        <ImageView
+            android:id="@+id/avatar_imv"
+            android:layout_width="93dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/avatar"
+            style="@style/Animation.Design.BottomSheetDialog" />
+
+        <TextView
+            android:id="@+id/txtv_SignupTitle_su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="350dp"
+            android:background="@drawable/change_page_style_txtv"
+            android:text="Signup Page"
+            android:paddingHorizontal="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtv_LoginTitle_su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/txtview_r"
+            android:text="Login Page"
+            android:paddingHorizontal="10dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Signup_btn_su"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="520dp"
+            android:text="SignUp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:cornerRadius="?android:attr/windowTitleSize"
+            app:icon="?attr/homeAsUpIndicator"
+            app:iconTint="@color/teal_200"
+            app:iconTintMode="src_atop"
+            app:strokeColor="@color/design_default_color_error"
+            app:strokeWidth="2dp" />
+
+            <ScrollView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etxt_Fname"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/etxt_su"
+                    android:hint="Enter fname"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                    <EditText
+                    android:id="@+id/etxt_Lname"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/etxt_su"
+                    android:hint="Enter lname"
+                    android:inputType="text"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/etxt_Address_su"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/etxt_su"
+                    android:hint="Enter address"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/etxt_PhoneNumber_su"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/etxt_su"
+                    android:hint="Enter phone number"
+                    android:inputType="phone"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/etxt_Birthday"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/etxt_su"
+                    android:hint="Enter Date of birth"
+                    android:inputType="date"
+                    android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/etxt_UserName_su"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/etxt_su"
+                        android:hint="Enter Username"
+                        android:inputType="text"
+                        android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/etxt_Password_su"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/etxt_su"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:padding="5dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+    </FrameLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
